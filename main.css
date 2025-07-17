@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Spline+Sans:wght@300..700&display=swap');
 
 *{
     margin: 0;
@@ -162,6 +163,138 @@ body{
     display: flex;
     padding-right: 65px;
 }
+
+
+
+
+
+.about_us{
+    display: flex;
+    height: 883px;
+    background-color: #0E0E0E;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_us_main_txt{
+    width: 609px;
+    height: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+    margin-left: 300px;
+}
+
+.gr{
+    color: #79E533;
+    font-weight: 400;
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.about_us_cenrter_txt{
+    display: flex;
+    justify-content: space-around;
+    height: 247px;
+    width: 100%;
+}
+
+.left-line {
+    width: 77px;          
+    height: 1px;           
+    background-color: white;        
+    margin-left: 300px;    
+}
+
+.block{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin-right: 300px;
+}
+
+.block_txt{
+    color: #fff;
+    font-family: "MuseoModerno", sans-serif;
+    width: 600px;
+    height: 96px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+
+.spin_arrow{
+    display: flex;
+    width: 450px;
+    align-items: center;
+    margin-left: 146px;
+}
+
+.rotating-arrow {
+  display: inline-block;
+  animation: spin 10s linear infinite; /* тривалість та тип */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-arrow img {
+  width: 127px; /* або будь-який розмір, який тобі потрібен */
+  height: 127;
+  display: block;
+}
+
+.img-switch-wrapper {
+  height: 312px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1480px;
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.slider-mask {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-switch {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.9s ease-in-out;
+}
+
+.img-switch img {
+  width: 296px;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.switch-button {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  /*left: 436;*/
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
 
 footer{
     display: flex;
