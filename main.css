@@ -266,8 +266,11 @@ body{
 }
 
 .slider-mask {
+    display: flex;
   overflow: hidden;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-switch {
@@ -306,10 +309,10 @@ body{
 .block-servises{
     display: flex;
     height: 296px;
-    width: 1280px;
+    
     justify-content: center;
     gap: 32px;
-    margin-left: 120px;
+    
 }
 
 .box-servise{
@@ -329,10 +332,10 @@ body{
 .block-servises-sec{
     display: flex;
     height: 296px;
-    width: 1280px;
+    
     justify-content: center;
     gap: 32px;
-    margin-left: 120px;
+    
     margin-top: 34px;
 }
 
