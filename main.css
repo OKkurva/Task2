@@ -578,6 +578,22 @@ body{
     height: 63px;
 }
 
+.LetsTalkBlock{
+    display: flex;
+    height: 100vh;
+    background-color: #0B0B0B;
+}
+
+
+.lets_talk_main_txt{
+    width: 609px;
+    height: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+    margin-left: 300px;
+}
 
 footer{
     display: flex;
