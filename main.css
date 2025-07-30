@@ -291,12 +291,12 @@ body{
   position: absolute;
   cursor: pointer;
   top: 50%;
-  /*left: 436;*/
+  left: 50%;
   width: 64px;
   height: 64px;
   border-radius: 32px;
   z-index: 10;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 
@@ -327,6 +327,13 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #1F1F1F;
+    transition:all 1s ease;
+}
+
+.box-servise:hover{
+    border-bottom: 10px;
+    box-shadow: 0px 20px 20px 0 #79E533;
+    
 }
 
 
@@ -410,7 +417,7 @@ body{
    flex-direction: column-reverse;
    width: 407px;
    height: 623px;
-   background-image: url('./bg-img.svg');
+   background-image: url('./img/bg-img.svg');
    background-size: cover;      /* або contain */
    background-position: center;
    background-repeat: no-repeat;
@@ -576,6 +583,124 @@ body{
     color: #A0A0A0;
     width: 296px;
     height: 63px;
+}
+
+.LetsTalkBlock{
+    display: flex;
+    height: 778px;
+    background-color: #0B0B0B;
+    justify-content: space-around;
+}
+
+.LesTalkLeft{
+    height: 634px;
+    margin-top: 67px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lets_talk_main_txt{
+    width: 609px;
+    height: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 42px;
+    font-family: "MuseoModerno", sans-serif;
+    margin-left: 300px;
+}
+
+
+
+    .form-container {
+      background-color: #000;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-left: 300px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #1c1c1c;
+      color: white;
+      font-size: 14px;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #888;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      padding: 15px;
+      background-color: #80ff00;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #aaff33;
+    }
+
+    .send-icon {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      .full-width {
+        grid-column: span 1;
+      }
+    }
+
+.LesTalkRight{
+    display: flex;
+    height: 634px;
+    width: 623px;
+    margin-top: 67px;
+    margin-right: 180px;
+    background-image: url('./img/LetsTalk.png');
+   background-size: cover;      /* або contain */
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 12px;
+   border-color: #24272C;
 }
 
 
