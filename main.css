@@ -98,6 +98,47 @@ body{
     width: 24px;
 }
 
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-left: 30px;
+}
+
+
+.sidebar {
+    background: #111;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: auto;
+    transition: left 0.3s ease;
+    margin-top: 100px; 
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #575757;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+
+
 .main_div{
     display: flex;
     height: 912px;
@@ -713,6 +754,7 @@ footer{
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     height:auto;
+    width: auto;
     align-items: center;
     background-color: #79E533;
 }
@@ -772,3 +814,34 @@ footer{
     margin-right: 15px;
 }
 
+
+
+@media screen and (max-width: 1025px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .main-navigation {
+        display: none;
+    }    
+    .LesTalkRight{
+        display: none;
+    }
+    .footer-txt{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 1420px) {
+    .right-peace{
+        display: none;
+    }
+}
