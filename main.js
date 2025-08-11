@@ -27,3 +27,32 @@ function nextImage() {
   const offset = currentIndex * (296 + 24); // ширина + gap
   track.style.transform = `translateX(-${offset}px)`;
 }
+
+
+
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+const headerPart = document.querySelector('.header-part');
+const header = document.querySelector('header');
+
+// Функція для переміщення блоку в сайдбар або назад
+function moveHeaderPart() {
+    if (window.innerWidth <= 1025) {
+        if (!sidebar.contains(headerPart)) {
+            sidebar.insertBefore(headerPart, sidebar.firstChild);
+        }
+    } else {
+        if (!header.contains(headerPart)) {
+            header.insertBefore(headerPart, menuBtn);
+        }
+    }
+}
+
+// При кліку відкривати/закривати сайдбар
+menuBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+});
+
+// Викликаємо при завантаженні і зміні розміру
+window.addEventListener('load', moveHeaderPart);
+window.addEventListener('resize', moveHeaderPart);
