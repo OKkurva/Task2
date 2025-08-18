@@ -958,8 +958,10 @@ footer{
     }
 
     .tech-blocks{
-        padding-left: 32px;
+        justify-content: center;
+        padding-left: 0px;
         padding-right: 0px;
+        gap: 0;
     }
 
     .LesTalkLeft{
